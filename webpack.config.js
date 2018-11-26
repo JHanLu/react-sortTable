@@ -27,11 +27,8 @@ module.exports = {
                     'babel-loader',
                     {
                         loader: 'react-svg-loader',
-                        query: {
-                            svgo: {
-                                pretty: true,
-                                plugins: [{ removeStyleElement: true }]
-                            }
+                        options: {
+                            jsx: true // true outputs JSX tags
                         }
                     }
                 ]
